@@ -19,7 +19,6 @@
     "@planetscale/database": "^1.10.0",
     "@tailwindcss/typography": "^0.5.9",
     "@tanstack/react-query": "^4.32.6",
-
     "@trpc/client": "^10.37.1",
     "@trpc/next": "^10.37.1",
     "@trpc/react-query": "^10.37.1",
