@@ -1,22 +1,13 @@
-import Image from 'next/image'
-import { trpc } from "./api/trpc/[trpc]";
-
-export default async function Home() {
-
- const users = await trpc.userList.query();
+export default async function Index() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-
-
-      {users.map((u, index) => (
-          <div key={index}>
-            <p>u.fullName</p>
-
-          </div>
-      ))}
-
+    <>
+      <div className="prose">
+        <h2>Next 13 with Server Components and Actions</h2>
+        <p>
+          This is a demo of using tRPC with Next.js 13&apos;s Server Components
+          and Actions. Choose a page from the sidebar to get started.
+        </p>
       </div>
-    </main>
-  )
+    </>
+  );
 }

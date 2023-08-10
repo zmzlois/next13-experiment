@@ -6,8 +6,8 @@ import { createId } from "@paralleldrive/cuid2"
 dotenv.config();
 
 export default {
-    schema: "./drizzle/schema/*",
-    out: "./drizzle/generated",
+    schema: "./src/schema/*",
+    out: "./src/generated",
     driver: "mysql2",
     dbCredentials: {
         connectionString: process.env.DATABASE_URL!,
